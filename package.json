@@ -1,0 +1,43 @@
+{
+  "name": "@apertur/sdk",
+  "version": "0.1.5",
+  "description": "Official Apertur SDK for Node.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Apertur-dev/apertur-node",
+    "directory": "packages/client-node"
+  },
+  "keywords": [
+    "apertur",
+    "sdk",
+    "upload",
+    "image",
+    "api"
+  ],
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "msw": "^2.12.14",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
